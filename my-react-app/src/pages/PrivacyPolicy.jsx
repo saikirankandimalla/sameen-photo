@@ -95,7 +95,7 @@ export default function PrivacyPolicy() {
       {/* Header */}
       <div className="border-b border-foreground/5 sticky top-0 bg-background/90 backdrop-blur-md z-40">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
-          <Link to="/" className="font-heading text-xl">Eternal</Link>
+          <Link to="/" className="font-heading text-xl">Sameen's Photography</Link>
           <Link to="/" className="flex items-center gap-2 text-xs tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground transition-colors">
             <ArrowLeft className="w-3.5 h-3.5" />
             Back
@@ -147,7 +147,7 @@ export default function PrivacyPolicy() {
 
         <div className="mt-20 pt-10 border-t border-foreground/5 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
           <p className="text-xs text-muted-foreground/50">
-            © 2025 Eternal Photography. All rights reserved.
+            © 2025 Sameen's Photography. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link to="/terms" className="text-xs text-muted-foreground hover:text-foreground transition-colors tracking-wide underline underline-offset-2">

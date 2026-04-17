@@ -11,7 +11,7 @@ export default function Footer() {
           viewport={{ once: true }}
           className="font-heading text-xl"
         >
-          Eternal
+          Sameen's Photography
         </motion.span>
 
         <div className="flex gap-8">
@@ -35,7 +35,7 @@ export default function Footer() {
             Terms & Conditions
           </Link>
           <span className="text-xs text-muted-foreground">
-            © 2025 Eternal. All rights reserved.
+            © 2025 Sameen's. All rights reserved.
           </span>
         </div>
       </div>

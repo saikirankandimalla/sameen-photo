@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/wedding/Navbar';
+import Footer from '../components/wedding/Footer';
+import { ArrowLeft } from 'lucide-react';
 
 const team = [
   {
@@ -43,10 +45,18 @@ const values = [
 export default function About() {
   return (
     <div className="bg-background text-foreground">
-      <Navbar />
+      <div className="border-b border-foreground/5 sticky top-0 bg-background/90 backdrop-blur-md z-40">
+        <div className="max-w-4xl mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
+          <Link to="/" className="font-heading text-xl">Sameen's Photography</Link>
+          <Link to="/" className="flex items-center gap-2 text-xs tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground transition-colors">
+            <ArrowLeft className="w-3.5 h-3.5" />
+            Back
+          </Link>
+        </div>
+      </div>
 
       {/* ── Hero ── */}
-      <section className="relative h-[70vh] lg:h-screen overflow-hidden flex items-end pb-16 lg:pb-24 pt-20">
+      <section className="relative h-[70vh] lg:h-screen overflow-hidden flex items-end pb-16 lg:pb-24 pt-24 lg:pt-28">
         <motion.div
           initial={{ scale: 1.08 }}
           animate={{ scale: 1 }}

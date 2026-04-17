@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -71,7 +71,7 @@ export default function Contact() {
               <label className="text-xs tracking-[0.2em] uppercase text-muted-foreground block mb-3">Full Name *</label>
               <Input
                 value={form.name}
-                onChange={(/** @type {React.ChangeEvent<HTMLInputElement>} */ e) => setForm({ ...form, name: e.target.value })}
+                onChange={(e) => setForm({ ...form, name: e.target.value })}
                 placeholder="Your name"
                 className="bg-transparent border-0 border-b border-foreground/20 rounded-none px-0 py-3 text-base focus-visible:ring-0 focus-visible:border-foreground placeholder:text-muted-foreground/40 transition-colors"
               />
@@ -81,7 +81,7 @@ export default function Contact() {
               <Input
                 type="email"
                 value={form.email}
-                onChange={(/** @type {React.ChangeEvent<HTMLInputElement>} */ e) => setForm({ ...form, email: e.target.value })}
+                onChange={(e) => setForm({ ...form, email: e.target.value })}
                 placeholder="Your email"
                 className="bg-transparent border-0 border-b border-foreground/20 rounded-none px-0 py-3 text-base focus-visible:ring-0 focus-visible:border-foreground placeholder:text-muted-foreground/40 transition-colors"
               />
@@ -95,7 +95,7 @@ export default function Contact() {
               <Input
                 type="tel"
                 value={form.phone}
-                onChange={(/** @type {React.ChangeEvent<HTMLInputElement>} */ e) => setForm({ ...form, phone: e.target.value })}
+                onChange={(e) => setForm({ ...form, phone: e.target.value })}
                 placeholder="+91 00000 00000"
                 className="bg-transparent border-0 border-b border-foreground/20 rounded-none px-0 py-3 text-base focus-visible:ring-0 focus-visible:border-foreground placeholder:text-muted-foreground/40 transition-colors"
               />
@@ -105,7 +105,7 @@ export default function Contact() {
               <Input
                 type="date"
                 value={form.date}
-                onChange={(/** @type {React.ChangeEvent<HTMLInputElement>} */ e) => setForm({ ...form, date: e.target.value })}
+                onChange={(e) => setForm({ ...form, date: e.target.value })}
                 className="bg-transparent border-0 border-b border-foreground/20 rounded-none px-0 py-3 text-base focus-visible:ring-0 focus-visible:border-foreground placeholder:text-muted-foreground/40 transition-colors"
               />
             </div>
@@ -116,7 +116,7 @@ export default function Contact() {
             <label className="text-xs tracking-[0.2em] uppercase text-muted-foreground block mb-3">Your Story</label>
             <Textarea
               value={form.message}
-              onChange={(/** @type {React.ChangeEvent<HTMLTextAreaElement>} */ e) => setForm({ ...form, message: e.target.value })}
+              onChange={(e) => setForm({ ...form, message: e.target.value })}
               placeholder="Tell us about your special day — venue, vision, and what makes your love story unique."
               rows={4}
               className="bg-transparent border-0 border-b border-foreground/20 rounded-none px-0 py-3 text-base focus-visible:ring-0 focus-visible:border-foreground placeholder:text-muted-foreground/40 resize-none transition-colors"
@@ -139,7 +139,7 @@ export default function Contact() {
               <span className="text-xs text-muted-foreground leading-relaxed">
                 I agree to receive communication via{' '}
                 <span className="text-foreground font-medium">SMS, RCS, and WhatsApp</span>{' '}
-                from Eternal Photography regarding my enquiry, booking updates, and exclusive offers.
+                from Sameen's Photography regarding my enquiry, booking updates, and exclusive offers.
                 Message &amp; data rates may apply. Reply STOP to opt out.
               </span>
             </label>
@@ -172,7 +172,7 @@ export default function Contact() {
                 >
                   Terms &amp; Conditions
                 </Link>{' '}
-                of Eternal Photography. *
+                of Sameen Photography. *
               </span>
             </label>
           </div>

@@ -33,9 +33,9 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
-          <a href="#" className="font-heading text-2xl tracking-wide">
-            <span className={scrolled ? 'text-foreground' : 'text-white'}>Eternal</span>
-          </a>
+          <Link to="/" className="font-heading text-2xl tracking-wide">
+            <span className={scrolled ? 'text-foreground' : 'text-white'}>Sameen's Photography</span>
+          </Link>
 
           <div className="hidden md:flex items-center gap-10">
             {links.map((link) => (
