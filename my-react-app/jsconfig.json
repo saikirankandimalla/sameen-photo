@@ -17,6 +17,6 @@
     "resolveJsonModule": true,
     "types": ["vite/client"]
   },
-  "include": ["src/components/**/*.{js,jsx}", "src/pages/**/*.jsx", "src/Layout.jsx"],
+  "include": ["src/components/**/*.{js,jsx}", "src/pages/**/*.jsx", "src/Layout.jsx", "src/components/wedding/HeroSection.jsx"],
   "exclude": ["node_modules", "dist", "src/vite-plugins", "src/api", "src/lib"]
 } 

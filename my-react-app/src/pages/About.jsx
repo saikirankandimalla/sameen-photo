@@ -45,7 +45,7 @@ const values = [
 export default function About() {
   return (
     <div className="bg-background text-foreground">
-      <div className="border-b border-foreground/5 sticky top-0 bg-background/90 backdrop-blur-md z-40">
+      {/* <div className="border-b border-foreground/5 sticky top-0 bg-background/90 backdrop-blur-md z-40">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
           <Link to="/" className="font-heading text-xl">Sameen's Photography</Link>
           <Link to="/" className="flex items-center gap-2 text-xs tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground transition-colors">
@@ -53,7 +53,7 @@ export default function About() {
             Back
           </Link>
         </div>
-      </div>
+      </div> */}
 
       {/* ── Hero ── */}
       <section className="relative h-[70vh] lg:h-screen overflow-hidden flex items-end pb-16 lg:pb-24 pt-24 lg:pt-28">
@@ -90,6 +90,7 @@ export default function About() {
           </motion.h1>
         </div>
       </section>
+       <Navbar />
 
       {/* ── About Text ── */}
       <section className="py-24 lg:py-32 px-6 lg:px-16 max-w-5xl mx-auto">

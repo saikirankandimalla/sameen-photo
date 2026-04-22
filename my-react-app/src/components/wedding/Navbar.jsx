@@ -14,12 +14,13 @@ export default function Navbar() {
   }, []);
 
   const links = [
-  { label: 'About', href: '/about' },
-    { label: 'Stories', href: '#stories' },
-    { label: 'Gallery', href: '#gallery' },
-    { label: 'Philosophy', href: '#philosophy' },
-    { label: 'Services', href: '#services' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Home', href: '/Home' },
+    { label: 'About', href: '/about' },
+    { label: 'Gallery', href: '/gallery' },
+    { label: 'Story', href: '/Story' },
+    { label: 'Philosophy', href: '/philosophy' },
+  
+    { label: 'Contact', href: '/contact' },
   ];
 
   return (
